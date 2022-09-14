@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="hinhtron.js"></script>
+</head>
+<canvas id="myPoint" width="2000" height="1000" style="border: 1px solid pink"></canvas>
+<body>
+<script>
+// Thực hành 3. Funny circles
+    let ctx=document.getElementById('myPoint').getContext('2d')
+    for (let i=0;i<10;i++){
+        let radius= Math.floor(Math.random() * 120);
+        let x = Math.random() * 2000+radius;
+        let y = Math.random() * 1000+radius;
+        let red = Math.floor(Math.random()*255);
+        let green =  Math.floor(Math.random()*255);
+        let blue =  Math.floor(Math.random()*255);
+        let color= `rgb(${red},${green},${blue})`;
+        let circle=new MyPoint(x,y,radius,color)
+        circle.drawCircle(ctx)
+    }
+
+
+
+
+
+
+
+
+
+
+    // Thực hành xây dưng  lớp date
+    //   class Date {
+    //     day;
+    //     month;
+    //     year;
+    //
+    //     constructor(day, month, year) {
+    //       this.day = day;
+    //       this.month = month;
+    //       this.year = year;
+    //     }
+    //     setDay(day){
+    //         this.day=day;
+    //     }getDay(){
+    //         return this.day;
+    //     }setMonth(month){
+    //         this.month=month;
+    //     }getMonth(){
+    //         return this.month
+    //     }setYear(year){
+    //         this.year=year;
+    //     }getYear(){
+    //         return this.year
+    //       }
+    //     setDate(day,month,year){
+    //         this.day=day;
+    //         this.month=month;
+    //         this.year=year;
+    //     }toString(){
+    //         return this.day + "/"+ this.month +"/" +this.year
+    //       }
+    //   }
+    //
+    //
+    //
+    // let date1= new Date(14,10,2022);
+    //   console.log(date1)
+    //     console.log(`sau khi thêm dữ liệu là: ${date1.toString()}`)
+    //
+    //     date1.setDate(26,2,1995)
+    //     console.log(` sau khi update là : ${date1.toString()}`)
+    //
+
+
+
+
+    //thực hành xây dựng lớp hình tròn
+    //
+    //
+    // class Circle {
+    //     radius;
+    //     color;
+    //     area;
+    //
+    //
+    //     constructor(radius, color, area) {
+    //         this.radius = radius;
+    //         this.color = color;
+    //         this.area = area;
+    //     }
+    //
+    //     setRadius(radius){
+    //         this.radius=radius
+    //     }getRadius(){
+    //         return this.radius
+    //     }setColor(color){
+    //         this.color=color
+    //     }getColor(){
+    //         return this.color
+    //     }getArea(){
+    //         return Math.PI*this.radius*this.radius;
+    //     }
+    // }
+    //
+    // let circle = new Circle(5)
+    // let radius = circle.getRadius();
+    // let area = circle.getArea();
+    // console.log(radius)
+    // console.log(area)
+    //
+    //
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
